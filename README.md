@@ -50,7 +50,7 @@ dependencies {
 Edit `android/app/src/main/java/.../MainApplication.java`:
 
 ```diff
-+ import com.jayli3n.ToggleImmersiveMode.ToggleImmersiveModePackage;
++ import com.jayli3n.toggleimmersivemode.ToggleImmersiveModePackage;
 
 ...
 
@@ -58,7 +58,7 @@ Edit `android/app/src/main/java/.../MainApplication.java`:
   protected List<ReactPackage> getPackages() {
     @SuppressWarnings("UnnecessaryLocalVariable")
     List<ReactPackage> packages = new PackageList(this).getPackages();
-+   packages.add(new ToggleImmersiveModePackage());
++   packages.add(ToggleImmersiveModePackage());
     // Packages that cannot be autolinked yet can be added manually here, for example:
     // packages.add(new MyReactNativePackage());
     return packages;
